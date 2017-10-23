@@ -1,7 +1,6 @@
 const fs = require('fs');
 const util = require('util');
 const csv = require('csv');
-const snakeCase = require('lodash/snakeCase');
 const es = require('./elasticsearch');
 const request = require('axios');
 
@@ -25,27 +24,7 @@ function parseFile (data, cb) {
       return resolve(data);
     });
     fs.createReadStream(data).pipe(parser);
-  })
-  .then(data => data.map(element => Object.keys(element).reduce((m, k) => {
-    switch (k) {
-      case 'long':
-        if (!m.location) {
-          m.location = {};
-        }
-        m.location['lon'] = element[k];
-        break;
-      case 'lat':
-        if (!m.location) {
-          m.location = {};
-        }
-        m.location['lat'] = element[k];
-        break;
-      default:
-        m[k] = element[k];
-        break;
-    }
-    return m;
-  }, {})));
+  });
 }
 
 async function loadDocs (data) {
@@ -58,7 +37,10 @@ async function loadDocs (data) {
     let requestObj = {
       method: 'post',
       url: 'http://localhost:3001/alerts/',
-      data: payload
+      data: payload,
+      headers: {
+        'x-tts-api-key': 'test'
+      }
     };
 
     docs.push(await request(requestObj));

@@ -1,7 +1,12 @@
-﻿name,message,priority,status,vendor,deviceId,deviceName,userId,userName
-temperature limit exceeded,Temp Limit Exceeded,3.00,Open,nest,8c74f8bb-52e6-40c2-a072-5984b225b878,Hallway Thermostat (Entry),4373a687-778d-4514-ba43-425235ec68ee,Logan Kelly
-dumb limit ,Dumb Limit Exceeded,2.00,Open,dummy,8414e51e-bd16-47e7-b2f8-fb294e02bf76,Dummy Device,4373a687-778d-4514-ba43-425235ec68ee,Logan Kelly
-wifi disconnected,Wifi Disconnected,3.00,Open,insignia,c4084104-2e4b-446e-8fcc-8c7f6ee3f90e,Insignia Smart Plug,4373a687-778d-4514-ba43-425235ec68ee,Logan Kelly
-security alarm tripped,Security Alarm,1.00,Open,nest,3bd08c5b-8656-4b78-9e9d-fd1372c440c7,Basement Nest Protect (Laundry),4373a687-778d-4514-ba43-425235ec68ee,Logan Kelly
-co2 warn,Carbon Monoxide Warning,1.00,Open,nest,e3bacdc5-fbff-4a50-81be-aaa87d4017e8,Kitchen Nest Protect (Range),4373a687-778d-4514-ba43-425235ec68ee,Logan Kelly
-motion detected,Motion Detected,3.00,Open,nest,23164f8a-e2ca-4b0c-878c-4126970c46c2,Driveway Camera (f299),4373a687-778d-4514-ba43-425235ec68ee,Logan Kelly
+name,message,priority,status,vendor,deviceId,deviceName,userId,userName
+temperature limit exceeded,Temp Limit Exceeded,3,Open,nest,8c74f8bb-52e6-40c2-a072-5984b225b878,Hallway Thermostat (Entry),4373a687-778d-4514-ba43-425235ec68ee,Logan Kelly
+dumb limit ,Dumb Limit Exceeded,2,Open,dummy,8414e51e-bd16-47e7-b2f8-fb294e02bf76,Dummy Device,4373a687-778d-4514-ba43-425235ec68ee,Logan Kelly
+wifi disconnected,Wifi Disconnected,3,Open,insignia,c4084104-2e4b-446e-8fcc-8c7f6ee3f90e,Insignia Smart Plug,4373a687-778d-4514-ba43-425235ec68ee,Logan Kelly
+security alarm tripped,Security Alarm,1,Open,nest,3bd08c5b-8656-4b78-9e9d-fd1372c440c7,Basement Nest Protect (Laundry),4373a687-778d-4514-ba43-425235ec68ee,Logan Kelly
+co2 warn,Carbon Monoxide Warning,1,Open,nest,e3bacdc5-fbff-4a50-81be-aaa87d4017e8,Kitchen Nest Protect (Range),4373a687-778d-4514-ba43-425235ec68ee,Logan Kelly
+motion detected,Motion Detected,3,Open,nest,23164f8a-e2ca-4b0c-878c-4126970c46c2,Driveway Camera (f299),4373a687-778d-4514-ba43-425235ec68ee,Logan Kelly
+blinky light,Camera Light Blinking,2,Open,nest,41860d12-d634-4c88-aa51-24cb00e62264,Hallway Thermostat (Entry),e595274d-f96c-49ce-964b-3061ba9f10c8,Logan Kelly
+fire,Fire Detected,1,New,nest,9ffb29d9-6f6f-4dc3-9257-22a947125348,Kitchen Nest Protect (Range),e595274d-f96c-49ce-964b-3061ba9f10c8,Logan Kelly
+dummy,Dumb Limit Exceeded,3,Closed,Dummy,37175947-f2c6-44d9-a8e7-b5fea909533a,Dummy Device,e595274d-f96c-49ce-964b-3061ba9f10c8,Logan Kelly
+neighbor barbeque,Neighboor Having Barbeque,1,Open,nest,4cff89b6-463e-4f8b-93e6-0570f8c88d62,Driveway Camera (Driveway),e595274d-f96c-49ce-964b-3061ba9f10c8,Logan Kelly
+laundry is done,Laundry's Finished,3,New,nest,30cdeee5-b5d9-4d58-aa7a-cea95c53c07b,Basement Nest Protect (Laundry),e595274d-f96c-49ce-964b-3061ba9f10c8,Logan Kelly
